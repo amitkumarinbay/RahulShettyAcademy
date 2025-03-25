@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+  <configuration>
+
+    <!-- ============================== -->
+    <!-- Report Appearance Configuration -->
+    <!-- ============================== -->
+    
+    <!-- Report Theme: Options - standard, dark -->
+    <theme>dark</theme>
+
+    <!-- Document Encoding: Default is UTF-8 -->
+    <encoding>UTF-8</encoding>
+
+    <!-- Protocol for Scripts and Stylesheets: Default is https -->
+    <protocol>https</protocol>
+
+    <!-- Document Title Displayed on Browser Tab -->
+    <documentTitle>BDD Report</documentTitle>
+
+    <!-- Report Name Displayed at Top Navigation -->
+    <reportName>RahulShettyAcademy Ecommerce Website</reportName>
+
+    <!-- Optional: Add an Image to the Report (e.g., Company Logo) -->
+    <![CDATA[
+      <img src='your-image-path' alt='Report Logo'/>
+    ]]>
+
+    <!-- Enable or Disable Viewing Report without Internet -->
+    <offlineMode>false</offlineMode>
+
+    <!-- ============================== -->
+    <!-- Custom JavaScript Configuration -->
+    <!-- ============================== -->
+    
+    <scripts>
+      <![CDATA[
+        $(document).ready(function() {
+          // Hide Existing Logo
+          $(".logo-content").hide();
+          
+          // Add Custom Logo from Path
+          $(".logo-container").html("<img src='.//TestData//logo-final-color.png' alt='Company Logo'/>");
+
+          // Optional: Add Custom Text
+          $(".logo-container").append("<span style='font-size: 18px; font-weight: bold;'>Nitin</span>");
+        });
+      ]]>
+    </scripts>
+
+    <!-- ============================== -->
+    <!-- Custom CSS for Additional Styling -->
+    <!-- ============================== -->
+    
+    <css>
+      <![CDATA[
+        /* Example: Customize Background and Font */
+        body {
+          font-family: 'Arial', sans-serif;
+        }
+        .report-name {
+          color: #ffffff;
+          font-size: 24px;
+          font-weight: bold;
+        }
+      ]]>
+    </css>
+
+  </configuration>
+</extentreports>
